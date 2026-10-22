@@ -112,4 +112,23 @@ th {
 }
 
 footer {
-  margin-top:
+  margin-top: 64px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+/* --- Mobil --- */
+@media (max-width: 640px) {
+  .container { margin: 0; padding: 32px 20px; border: none; }
+  .entry-head { flex-direction: column; gap: 4px; }
+}
+
+/* --- Utskrift --- */
+@media print {
+  :root { --bg: #fff; --surface: #fff; --surface-2: #fff;
+          --text: #000; --muted: #555; --border: #ccc; }
+  .container { border: none; margin: 0; padding: 0; }
+}
