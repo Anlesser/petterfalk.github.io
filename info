@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <title>Petter Falk</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Petter Falk</h1>
+  <p>Här skriver du om dig själv.</p>
+</body>
+</html>
