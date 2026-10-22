@@ -1,274 +1,189 @@
-<link rel="stylesheet" href="style.css">
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Petter Falk – CV</title>
-<style>
-  :root { --accent: #1a5fb4; --bg: #f5f7fa; --text: #2b2b2b; }
-  * { box-sizing: border-box; }
-  body { font-family: Georgia, serif; background: var(--bg); color: var(--text);
-         margin: 0; line-height: 1.6; }
-  .container { max-width: 850px; margin: 40px auto; padding: 50px;
-               background: #fff; box-shadow: 0 2px 10px rgba(0,0,0,.08); }
-  header { border-bottom: 3px solid var(--accent); padding-bottom: 20px; margin-bottom: 30px; }
-  h1 { margin: 0; font-size: 2.2rem; color: var(--accent); }
-  header p { margin: 5px 0 0; color: #666; }
-  h2 { color: var(--accent); font-size: 1.3rem; border-bottom: 1px solid #ddd;
-       padding-bottom: 6px; margin-top: 45px; text-transform: uppercase; letter-spacing: .05em; }
-  .entry { margin-bottom: 22px; }
-  .entry-head { display: flex; justify-content: space-between; gap: 15px; flex-wrap: wrap; }
-  .entry-head strong { font-size: 1.05rem; }
-  .date { color: var(--accent); white-space: nowrap; font-style: italic; }
-  .place { color: #666; font-size: .92rem; margin: 2px 0; }
-  .entry p { margin: 4px 0; }
-  table { width: 100%; border-collapse: collapse; margin-top: 10px; font-size: .95rem; }
-  th, td { border: 1px solid #ddd; padding: 8px 10px; text-align: left; }
-  th { background: var(--bg); }
-  .note { font-style: italic; color: #555; margin-top: 15px; }
-  footer { margin-top: 50px; padding-top: 15px; border-top: 1px solid #ddd;
-           color: #999; font-size: .85rem; text-align: center; }
-  @media print { body { background: #fff; } .container { box-shadow: none; margin: 0; } }
-</style>
-</head>
-<body>
-<div class="container">
+/* ============
+   CV – Modern 2026
+   ============ */
 
-<header>
-  <h1>Petter Falk</h1>
-  <p>Senior Lecturer in Political Science · Karlstad University</p>
-  <p>Democracy, algorithmic systems and data in the public sector</p>
-</header>
+:root {
+  --bg: #0f1115;
+  --surface: #171a21;
+  --surface-2: #1e222b;
+  --text: #e8eaed;
+  --muted: #9aa3b2;
+  --accent: #6ea8fe;
+  --accent-2: #b085ff;
+  --border: rgba(255, 255, 255, 0.08);
+  --radius: 14px;
+  --shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+}
 
-<h2>Formal Education</h2>
-<div class="entry">
-  <div class="entry-head"><strong>Doctoral Studies, Political Science</strong><span class="date">2019–2024</span></div>
-  <p class="place">Karlstad University</p>
-</div>
-<div class="entry">
-  <div class="entry-head"><strong>Master's Degree, Political Science</strong><span class="date">2018</span></div>
-  <p class="place">Karlstad University</p>
-</div>
-<div class="entry">
-  <div class="entry-head"><strong>Bachelor's Programme in Political Science</strong><span class="date">2007–2011</span></div>
-  <p class="place">Karlstad University</p>
-</div>
-<div class="entry">
-  <div class="entry-head"><strong>Hindi Language Studies 1</strong><span class="date">2007</span></div>
-  <p class="place">Banaras Hindu University / Uppsala University</p>
-</div>
-<div class="entry">
-  <div class="entry-head"><strong>History of Religions, Courses A–D</strong><span class="date">2004–2006</span></div>
-  <p class="place">Karlstad University</p>
-</div>
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg: #f4f6fb;
+    --surface: #ffffff;
+    --surface-2: #f0f3f9;
+    --text: #1c1f26;
+    --muted: #5c6572;
+    --accent: #2563eb;
+    --accent-2: #7c3aed;
+    --border: rgba(0, 0, 0, 0.08);
+    --shadow: 0 8px 32px rgba(20, 30, 60, 0.12);
+  }
+}
 
-<h2>Higher Education Teaching and Learning</h2>
-<div class="entry">
-  <div class="entry-head"><strong>Doctoral Supervision Course (DHU)</strong><span class="date">2025–present</span></div>
-  <p class="place">Higher Education Teaching and Learning, Karlstad University</p>
-</div>
-<div class="entry">
-  <div class="entry-head"><strong>Building Your Pedagogical Portfolio (BMP)</strong><span class="date">2025</span></div>
-  <p class="place">Higher Education Teaching and Learning, Karlstad University</p>
-</div>
-<div class="entry">
-  <div class="entry-head"><strong>Creating an Accessible Learning Environment (STL)</strong><span class="date">2025</span></div>
-  <p class="place">Higher Education Teaching and Learning, Karlstad University</p>
-</div>
-<div class="entry">
-  <div class="entry-head"><strong>Higher Education Didactics for Sustainability (HEDS)</strong><span class="date">2025</span></div>
-  <p class="place">Higher Education Teaching and Learning, Karlstad University</p>
-</div>
-<div class="entry">
-  <div class="entry-head"><strong>Feedback and Examination (AEX)</strong><span class="date">2024</span></div>
-  <p class="place">Higher Education Teaching and Learning, Karlstad University</p>
-</div>
-<div class="entry">
-  <div class="entry-head"><strong>Teaching at University: Knowledge, Learning and Practical Leadership (KLL)</strong><span class="date">2022</span></div>
-  <p class="place">Higher Education Teaching and Learning, Karlstad University</p>
-</div>
-<div class="entry">
-  <div class="entry-head"><strong>Teaching at University: Frameworks, Regulations and Resources (RRR)</strong><span class="date">2021</span></div>
-  <p class="place">Higher Education Teaching and Learning, Karlstad University</p>
-</div>
-<div class="entry">
-  <div class="entry-head"><strong>Teach Like a Champion (UPE)</strong><span class="date">2021</span></div>
-  <p class="place">Higher Education Teaching and Learning, Karlstad University</p>
-</div>
-<div class="entry">
-  <div class="entry-head"><strong>Norm-Critical Pedagogy (NKP)</strong><span class="date">2021</span></div>
-  <p class="place">Higher Education Teaching and Learning, Karlstad University</p>
-</div>
+* { box-sizing: border-box; }
 
-<h2>Selected Employment</h2>
-<div class="entry">
-  <div class="entry-head"><strong>Senior Lecturer, Karlstad University</strong><span class="date">January 2026–present</span></div>
-  <p class="place">Political Science // CTF Centre for Service Research // Karlstad University Societal Impact AB</p>
-  <p>Lead research and development projects on democracy, algorithmic systems and data in the public sector. Teach courses in democratic theory, organisation theory and welfare models.</p>
-</div>
-<div class="entry">
-  <div class="entry-head"><strong>Lecturer, Karlstad University</strong><span class="date">January 2021–2026</span></div>
-  <p class="place">Political Science // CTF Centre for Service Research // Karlstad University Societal Impact AB</p>
-  <p>As above.</p>
-</div>
-<div class="entry">
-  <div class="entry-head"><strong>Project Manager, RISE Research Institutes of Sweden</strong><span class="date">June 2016–December 2020</span></div>
-  <p>Managed development projects and processes focused on data-driven systems and practices, democracy and design.</p>
-</div>
-<div class="entry">
-  <div class="entry-head"><strong>Data Analyst / Project Manager, Attityd i Karlstad AB</strong><span class="date">April 2012–May 2016</span></div>
-  <p>Project manager and data analyst at the research and analysis company Attityd i Karlstad, with a particular focus on the public sector.</p>
-</div>
-<div class="entry">
-  <div class="entry-head"><strong>Investigator, City of Karlstad – City Executive Office</strong><span class="date">January 2009–March 2012</span></div>
-  <p>Conducted investigations focusing on consultation and democracy issues.</p>
-</div>
+html { scroll-behavior: smooth; }
 
-<h2>Selected Research and Development Project Experience</h2>
-<div class="entry">
-  <div class="entry-head"><strong>Process Lead – Early Insights, Early Interventions</strong><span class="date">2023–2025</span></div>
-  <p class="place">Karlstad University Societal Impact AB</p>
-  <p>Implementation of the new Social Services Act – Swedish Association of Local Authorities and Regions (SALAR).</p>
-</div>
-<div class="entry">
-  <div class="entry-head"><strong>Project Manager – Systematic Service User Involvement: Data and Integrated Care</strong><span class="date">2021–2023</span></div>
-  <p class="place">Karlstad University Societal Impact AB / Region Värmland</p>
-</div>
-<div class="entry">
-  <div class="entry-head"><strong>Project Manager – Seeing Yourself in the Code</strong><span class="date">2019–2020</span></div>
-  <p class="place">RISE / SCÖ / Linköping Municipality</p>
-  <p>Algorithmic systems and AI in social work (VINNOVA-funded project, awarded through a competitive process).</p>
-</div>
-<div class="entry">
-  <div class="entry-head"><strong>Project Manager – Democracy Data</strong><span class="date">2018–2020</span></div>
-  <p class="place">RISE / City of Karlstad / City of Malmö</p>
-  <p>Data-driven approaches in Swedish social services (VINNOVA-funded project, awarded through a competitive process).</p>
-</div>
-<div class="entry">
-  <div class="entry-head"><strong>Process Lead – Open4Citizens</strong><span class="date">2016–2018</span></div>
-  <p class="place">RISE / Värmland County Council</p>
-  <p>Horizon 2020 project on open data and citizen participation.</p>
-</div>
-<div class="entry">
-  <div class="entry-head"><strong>Project Manager – xKRP</strong><span class="date">—</span></div>
-  <p class="place">RISE / Swedish Consumer Agency / An Open Kronoparken / Karlstad University, among others</p>
-  <p>Project manager for a national citizen-centred data lab (VINNOVA-funded project, awarded through a competitive process).</p>
-</div>
-<div class="entry">
-  <div class="entry-head"><strong>Project Manager – UTSATT</strong><span class="date">2016–2018</span></div>
-  <p class="place">RISE / Sticky Beat / Balansa / Karlstad University</p>
-  <p>Project manager for gender equality training in virtual reality (VINNOVA-funded project, awarded through a competitive process).</p>
-</div>
+body {
+  margin: 0;
+  font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
 
-<h2>Selected Positions of Trust and Other Experience</h2>
-<div class="entry">
-  <div class="entry-head"><strong>Changemaker Education Experience Designer Programme</strong><span class="date">2020–2023</span></div>
-  <p class="place">Karlstad / Stockholm</p>
-  <p>Steering Committee Member</p>
-</div>
-<div class="entry">
-  <div class="entry-head"><strong>DATA4CHAN.GE</strong><span class="date">2019</span></div>
-  <p class="place">Tallinn</p>
-  <p>Data Researcher</p>
-</div>
-<div class="entry">
-  <div class="entry-head"><strong>GLOBSEC – EUact 2nd Transnational Reflection</strong><span class="date">2019</span></div>
-  <p class="place">Bratislava, Slovakia</p>
-  <p>Civil Society Representative</p>
-</div>
-<div class="entry">
-  <div class="entry-head"><strong>Coompanion Värmland</strong><span class="date">2017–2020</span></div>
-  <p class="place">Karlstad</p>
-  <p>Board Member</p>
-</div>
-<div class="entry">
-  <div class="entry-head"><strong>DATA4CHAN.GE</strong><span class="date">2016</span></div>
-  <p class="place">Beirut, Lebanon</p>
-  <p>Data Researcher</p>
-</div>
-<div class="entry">
-  <div class="entry-head"><strong>Start_V 2015 – The Future of European Volunteerism</strong><span class="date">2015</span></div>
-  <p class="place">Faro, Portugal</p>
-  <p>Civil Society Representative</p>
-</div>
-<div class="entry">
-  <div class="entry-head"><strong>Civic Karlstad</strong><span class="date">2015–2018</span></div>
-  <p class="place">Karlstad</p>
-  <p>Co-founder / Process Lead</p>
-</div>
-<div class="entry">
-  <div class="entry-head"><strong>Hyper Island / Swedish Institute – Young Leaders Visitors Programme</strong><span class="date">2013</span></div>
-  <p class="place">Stockholm, Sweden / Amman, Jordan</p>
-  <p>Participant</p>
-</div>
-<div class="entry">
-  <div class="entry-head"><strong>Urban Solutions – Tapping the Talents of Urban Youth</strong><span class="date">2013</span></div>
-  <p class="place">Birmingham, UK</p>
-  <p>Participant, Salto Youth / British Youth Council · Speaker / Workshop Designer</p>
-</div>
-<div class="entry">
-  <div class="entry-head"><strong>Pave the Way – Peace and Volunteering in Europe</strong><span class="date">2012</span></div>
-  <p class="place">Budapest, Hungary · United Network of Young Peacebuilders</p>
-  <p>Participant / Special Seminar Trainer</p>
-</div>
-<div class="entry">
-  <div class="entry-head"><strong>Swedish Delegation, Leadership Programme SWY</strong><span class="date">2011</span></div>
-  <p class="place">Cabinet Office of Japan / United Nations University of Tokyo</p>
-  <p>Assistant National Leader / Workshop Facilitator</p>
-</div>
-<div class="entry">
-  <div class="entry-head"><strong>Youth Advocacy and Inclusion – GSM Turkey</strong><span class="date">2010</span></div>
-  <p class="place">Ankara, Turkey</p>
-  <p>Workshop Facilitator / Training Designer</p>
-</div>
-<div class="entry">
-  <div class="entry-head"><strong>Representation during the Swedish EU Council Presidency</strong><span class="date">2009</span></div>
-  <p class="place">Stockholm · LSU – National Council of Swedish Youth Organisations</p>
-  <p>Swedish representative during Sweden's EU Council Presidency</p>
-</div>
-<div class="entry">
-  <div class="entry-head"><strong>Representation during the Czech EU Council Presidency</strong><span class="date">2009</span></div>
-  <p class="place">Prague, Czech Republic · LSU – National Council of Swedish Youth Organisations</p>
-  <p>Swedish representative during the Czech EU Council Presidency</p>
-</div>
-<div class="entry">
-  <div class="entry-head"><strong>Representation during the Slovenian EU Council Presidency</strong><span class="date">2008</span></div>
-  <p class="place">Ljubljana, Slovenia · LSU – National Council of Swedish Youth Organisations</p>
-  <p>Swedish representative during the Slovenian EU Council Presidency</p>
-</div>
+.container {
+  max-width: 880px;
+  margin: 40px auto;
+  padding: 56px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
 
-<h2>Teaching Experience</h2>
-<table>
-  <tr><th>Course</th><th>Semester</th><th>Hours</th></tr>
-  <tr><td rowspan="6">SVGAHA – Leadership and Organisational Development in Health and Social Care: Organisation Theory (7.5 credits)</td><td>Autumn 2020</td><td>10</td></tr>
-  <tr><td>Autumn 2021</td><td>90</td></tr>
-  <tr><td>Autumn 2022</td><td>90</td></tr>
-  <tr><td>Autumn 2023</td><td>90</td></tr>
-  <tr><td>Autumn 2024</td><td>164</td></tr>
-  <tr><td>Autumn 2025</td><td>90</td></tr>
-  <tr><td rowspan="4">SVGE20 – The Swedish Welfare State Model (7.5 credits)</td><td>Autumn 2023</td><td>85</td></tr>
-  <tr><td>Spring 2024</td><td>90</td></tr>
-  <tr><td>Autumn 2024</td><td>70</td></tr>
-  <tr><td>Spring 2025</td><td>70</td></tr>
-  <tr><td rowspan="2">SVAM08 – Policy Analysis (7.5 credits)</td><td>Spring 2025</td><td>25</td></tr>
-  <tr><td>Spring 2026</td><td>25</td></tr>
-  <tr><td rowspan="2">SVGB96 – Urban and Regional Planning as a Democratic Process (7.5 credits)</td><td>Spring 2025</td><td>30</td></tr>
-  <tr><td>Spring 2026</td><td>30</td></tr>
-  <tr><td>SVAP27 – Leadership and Disinformation (15 credits)</td><td>Spring 2026</td><td>60</td></tr>
-</table>
-<p class="note">In addition to my teaching experience, I have contributed to the development of a master's programme, including course planning and content development. I have also been a guest lecturer on several occasions at Oslo Metropolitan University, the University of Gothenburg and Politecnico di Milano, sharing expertise in my specialist areas.</p>
+header {
+  position: relative;
+  padding-bottom: 28px;
+  margin-bottom: 40px;
+}
+header::after {
+  content: "";
+  position: absolute;
+  left: 0; bottom: 0;
+  width: 72px; height: 4px;
+  border-radius: 2px;
+  background: linear-gradient(90deg, var(--accent), var(--accent-2));
+}
+h1 {
+  margin: 0 0 6px;
+  font-size: 2.4rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  background: linear-gradient(120deg, var(--accent), var(--accent-2));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+header p { margin: 4px 0 0; color: var(--muted); }
 
-<h2>Supervision</h2>
-<table>
-  <tr><th>Course</th><th>Semester</th><th>Hours</th></tr>
-  <tr><td rowspan="2">SVGC20 – Political Science III (15 credits)</td><td>Autumn 2023</td><td>60</td></tr>
-  <tr><td>Spring 2025</td><td>60</td></tr>
-  <tr><td>SVGCH4 – Health and Medical Care Administration (15 credits)</td><td>Spring 2025</td><td>60</td></tr>
-  <tr><td>Media and Communication Studies C (15 credits)</td><td>Autumn 2025</td><td>20</td></tr>
-</table>
+h2 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--accent);
+  margin: 56px 0 20px;
+  padding: 0;
+  border: none;
+}
+h2::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: var(--border);
+}
 
-<footer>Last updated October 2026</footer>
-</div>
-</body>
-</html>
+.entry {
+  padding: 16px 18px;
+  margin-bottom: 12px;
+  border-radius: 10px;
+  background: var(--surface-2);
+  border: 1px solid transparent;
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+.entry:hover {
+  border-color: var(--accent);
+  transform: translateX(4px);
+}
+.entry-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.entry-head strong { font-size: 1.02rem; font-weight: 600; }
+.date {
+  color: var(--accent);
+  font-size: 0.88rem;
+  font-style: normal;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+  padding: 2px 10px;
+  background: color-mix(in srgb, var(--accent) 12%, transparent);
+  border-radius: 999px;
+}
+.place { color: var(--muted); font-size: 0.9rem; margin: 4px 0; }
+.entry p { margin: 4px 0; font-size: 0.95rem; }
+
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin-top: 12px;
+  font-size: 0.92rem;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  overflow: hidden;
+}
+th, td {
+  padding: 10px 14px;
+  text-align: left;
+  border: none;
+  border-bottom: 1px solid var(--border);
+}
+th {
+  background: var(--surface-2);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+}
+tr:hover td { background: color-mix(in srgb, var(--accent) 6%, transparent); }
+tr:last-child td { border-bottom: none; }
+
+.note {
+  font-style: normal;
+  color: var(--muted);
+  margin-top: 20px;
+  padding: 16px 18px;
+  border-left: 3px solid var(--accent-2);
+  background: var(--surface-2);
+  border-radius: 0 10px 10px 0;
+}
+
+footer {
+  margin-top: 60px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 0.85rem;
+  text-align: center;
+}
+
+@media (max-width: 640px) {
+  .container { margin: 0; padding: 28px 20px; border-radius: 0; border: none; }
+  h1 { font-size: 1.8rem; }
+  .entry-head { flex-direction: column; gap: 6px; }
+}
+
+@media print {
+  :root { --bg: #fff; --surface: #fff; --surface-2: #fff; --text: #000;
+          --muted: #444; --border: #ccc; --accent: #000; --accent-2: #000; }
+  .container { box-shadow: none; border: none; margin: 0; padding: 0; }
+  .entry:hover { transform: none; }
+}
