@@ -331,3 +331,7 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+  .publist {
+  list-style: none;
+  padding-left: 0;
+}
