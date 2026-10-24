@@ -139,3 +139,19 @@ footer {
 .section-divider {
   margin: 48px 0;
 }
+.intro {
+  max-width: 65ch;
+  margin: 40px 0;
+  padding-left: 20px;
+  border-left: 3px solid currentColor;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.intro p {
+  margin: 0 0 12px;
+}
+
+.intro p:last-child {
+  margin-bottom: 0;
+}
