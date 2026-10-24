@@ -116,3 +116,26 @@ footer {
   padding-top: 20px;
   border-top: 1px solid var(--border);
   color: var(--muted);
+
+.site-nav {
+  margin-bottom: 48px;
+  font-size: 0.85rem;
+}
+
+.video iframe {
+  border: 0;
+}
+
+.video-divider,
+.section-divider {
+  border: 0;
+  border-top: 1px solid #e0e0e0;
+}
+
+.video-divider {
+  margin: 25px 0;
+}
+
+.section-divider {
+  margin: 48px 0;
+}
