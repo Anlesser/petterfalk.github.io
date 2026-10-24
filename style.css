@@ -185,3 +185,14 @@ footer {
    .quote-reveal {
   margin-top: 32px;
 }
+.quote-reveal summary {
+  font-size: 0.75rem;
+  color: #b0b0b0;        /* faded grey */
+  cursor: pointer;
+  outline: none;
+  width: fit-content;    /* only the word itself is clickable */
+}
+ 
+.quote-reveal summary:hover {
+  color: #777;           /* slightly darker on hover */
+}
