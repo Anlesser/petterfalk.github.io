@@ -216,3 +216,7 @@ footer {
 .publist a {
   overflow-wrap: anywhere;
 }
+  .site-gif {
+  max-width: 100%;
+  height: auto;
+}
