@@ -155,3 +155,30 @@ footer {
 .intro p:last-child {
   margin-bottom: 0;
 }
+   .quote {
+  position: relative;
+  margin: 48px 0;
+  padding: 12px 0 12px 28px;
+  border-left: 2px solid var(--muted);
+}
+
+.quote::before {
+  content: "“";
+  display: block;
+  height: 0.6em;
+  color: var(--muted);
+  font-size: 4rem;
+  line-height: 1;
+}
+
+.quote p {
+  margin: 24px 0 16px;
+  font-size: 1.15rem;
+  line-height: 2;
+}
+
+.quote cite {
+  color: var(--muted);
+  font-size: 0.85rem;
+  font-style: normal;
+}
