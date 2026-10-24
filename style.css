@@ -198,3 +198,21 @@ footer {
 .quote-reveal summary:hover {
   color: #777;           /* slightly darker on hover */
 }
+  .publist {
+  padding-left: 1.6rem;
+}
+
+.publist li {
+  line-height: 1.65;
+  padding: 0 0 1rem 0.4rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.publist li:last-child {
+  border-bottom: none;
+}
+
+.publist a {
+  overflow-wrap: anywhere;
+}
